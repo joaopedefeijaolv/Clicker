@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clicker com Rebirths</title>
+<title>Clicker com Rebirths e Pets</title>
 <style>
     body { font-family: Arial, sans-serif; text-align: center; background: #1e1e2f; color: #fff; }
     h1 { margin-top: 20px; }
     #clickButton { padding: 20px 40px; font-size: 24px; margin: 20px; cursor: pointer; }
     button { padding: 10px 20px; margin: 5px; cursor: pointer; }
-    #rebirth { margin-top: 20px; }
+    #rebirth, #pets { margin-top: 20px; }
 </style>
 </head>
 <body>
-<h1>Clicker com Rebirths</h1>
+<h1>Clicker com Rebirths e Pets</h1>
 <p>Moedas: <span id="coins">0</span></p>
 <p>Bônus por rebirth: <span id="rebirthBonus">1x</span></p>
 <button id="clickButton">Clique aqui!</button>
@@ -26,6 +26,11 @@
     <h3>Rebirth</h3>
     <p>Você pode rebirth quando tiver <span id="rebirthReq">50</span> moedas.</p>
     <button id="rebirthButton">Fazer Rebirth</button>
+</div>
+
+<div id="pets">
+    <h3>Pets:</h3>
+    <div id="petsContainer"></div>
 </div>
 
 <script src="clicker.js"></script>
