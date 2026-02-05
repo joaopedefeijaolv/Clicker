@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clicker com Rebirths</title>
+<style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #1e1e2f; color: #fff; }
+    h1 { margin-top: 20px; }
+    #clickButton { padding: 20px 40px; font-size: 24px; margin: 20px; cursor: pointer; }
+    button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    #rebirth { margin-top: 20px; }
+</style>
+</head>
+<body>
+<h1>Clicker com Rebirths</h1>
+<p>Moedas: <span id="coins">0</span></p>
+<p>Bônus por rebirth: <span id="rebirthBonus">1x</span></p>
+<button id="clickButton">Clique aqui!</button>
+
+<h3>Upgrades:</h3>
+<button id="upgradeClick">+1 Coin por Clique (Custo: <span id="upgradeClickCost">10</span>)</button>
+<button id="upgradeAuto">+1 Coin por Segundo (Custo: <span id="upgradeAutoCost">25</span>)</button>
+
+<div id="rebirth">
+    <h3>Rebirth</h3>
+    <p>Você pode rebirth quando tiver <span id="rebirthReq">50</span> moedas.</p>
+    <button id="rebirthButton">Fazer Rebirth</button>
+</div>
+
+<script src="clicker.js"></script>
+</body>
+</html>
